@@ -25,13 +25,12 @@ using namespace RawStateLAMMPSTools;
 
 int main()
 {
-    //=========================================================================
 
     std::string *names;
     int number_of_files = parseInputFilenames(names);
 
     cout << "NUMBER OF FILES READ: " << number_of_files << "\n";
-    //=========================================================================
+    
     double x_length = 0.0;
     double y_length = 0.0;
     double z_length = 0.0;
@@ -64,8 +63,8 @@ int main()
 
     for (int file = 0; file < number_of_files; file++)
     {
-        // one file working algorithm
-        std::string dumpFile = names[file]; //"./testExport.txt";
+        
+        std::string dumpFile = names[file]; 
         std::ifstream inFile(dumpFile);
         numberOfAtomsInFile = std::count(std::istreambuf_iterator<char>(inFile),
                                          std::istreambuf_iterator<char>(), '\n');
@@ -162,8 +161,6 @@ int main()
 
             average_bin_z /= atomInside_z.size();
 
-            //Histogram from from one file
-
             table[j][0] = ((2 * j + 1) * r_max) / 2;
             table[j][1] = average_bin_z;
 
@@ -180,7 +177,7 @@ int main()
         }
         delete[] table;
     }
-    //End Making average profile
+    
     double **averageProfileTable = new double *[width];
     AverageOverFiles(number_of_files, width, averaged, averageProfileTable);
 
@@ -279,16 +276,16 @@ int main()
         }
     }
 
-    // double k_b = 1.380649;
-    // double T_m = 1687.0;
+    double k_b = 1.380649;
+    double T_m = 1687.0;
 
-    // double interfacialEnergy = 0.0;
-    // for (size_t i = 0; i < linecounter; i++)
-    // {
-    //     interfacialEnergy = (k_b * T_m / x_length * averageMagnitude) * (1 / (magnitude[i][0] * magnitude[i][0]));
-    //     magnitude[i][2] = interfacialEnergy;
-    //     cout << "INTERFACIAL ENERGY :    " << interfacialEnergy << '\n';
-    // }
+    double interfacialEnergy = 0.0;
+    for (size_t i = 0; i < linecounter; i++)
+    {
+         interfacialEnergy = (k_b * T_m / x_length * averageMagnitude) * (1 / (magnitude[i][0] * magnitude[i][0]));
+         magnitude[i][2] = interfacialEnergy;
+         cout << "INTERFACIAL ENERGY :    " << interfacialEnergy << '\n';
+    }
 
     cout << "MAX MAGNITUDE :    " << max_magnitude << '\n';
     double freq = max_index * max_magnitude / linecounter;
