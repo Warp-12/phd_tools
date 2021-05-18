@@ -289,7 +289,7 @@ int main(int argc, char *argv[]) {
         }
 
         dt = table[1][0] - table[0][0];
-        
+
         double ***correlation = new double **[n_corrs];
 
         width = rows / n_corrs;
@@ -334,8 +334,6 @@ int main(int argc, char *argv[]) {
         delete[] table;
     }
 
-    // END OF FILE LOOP
-
     double **mean_corr;
     AverageOverFiles(number_of_files, width, averaged, mean_corr);
     I = Integrate(width, dt, mean_corr);
@@ -356,5 +354,3 @@ int main(int argc, char *argv[]) {
 
     delete[] averaged;
 }
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
