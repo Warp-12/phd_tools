@@ -12,10 +12,8 @@
 using namespace std;
 
 #define BP(string) std::cout << (string) << "\n";
-//-------------------------------------------------------------------------------
+
 int main(int argc, char *argv[]) {
-    //---------------------------------------------------------------------------------
-    //Initialise stream
 
     ifstream infile;
     ofstream outfile;
@@ -25,9 +23,8 @@ int main(int argc, char *argv[]) {
     stringstream linestream;
     string line;
 
-    //---------------------------------------------------------------------------------
 
-    namestream << "./1_at_AuSi_675.out";  //zmiana nazwy  pliku dumpa
+    namestream << "./1_at_AuSi_675.out"; 
 
     infile.open(namestream.str().c_str());
 
@@ -57,10 +54,7 @@ int main(int argc, char *argv[]) {
     infile.close();
     infile.clear();
 
-    //--------------------------------------------------------------------------------
-    //-------------------------------Structure of cod---------------------------------
-
-    double **atoms = new double *[n_atoms];  // tablica na koordynaty dla atomów dla każdego kroku czasowego
+    double **atoms = new double *[n_atoms]; 
     for (int atom_id = 0; atom_id < n_atoms; atom_id++)
         atoms[atom_id] = new double[4];
 
@@ -83,9 +77,7 @@ int main(int argc, char *argv[]) {
     bool begin_analysis = false;
 
     string trashcan;
-
-    //---------------------------------------------------------------------------------
-    //=================================Atoms coord reading=============================
+    
     while (getline(infile, line)) {
         if (begin_timestep) {
             if (begin_atoms) {
@@ -96,23 +88,23 @@ int main(int argc, char *argv[]) {
                 for (int dimension = 0; dimension < 3; dimension++)
                     linestream >> atoms[atom_counter][dimension];
 
-                atoms[atom_counter][3] = atom_type - 1;  // atom type sie zmienia dla elementu tablicy
+                atoms[atom_counter][3] = atom_type - 1;  
 
                 atom_counter++;
 
-                if (atom_counter == 1)  // kiedy dojedzie do przedostatniego atomu zaczna analiza
+                if (atom_counter == 1) 
                 {
-                    begin_timestep = false;  // nie zaczyna zczytywac timestepu
-                    begin_atoms = false;     // nie zaczyna zczytywac coords atomów
-                    begin_analysis = true;   // nie zaczu=yna analizy na najbliszczy sasiadów
+                    begin_timestep = false;  
+                    begin_atoms = false;     
+                    begin_analysis = true;  
 
-                    timestep_counter++;  // podnosi licznik dla nastepnego timestepu
+                    timestep_counter++;  
 
                     atom_counter = 0;
                 }
             }
         }
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
         if (begin_analysis) {
             double x = 0.0;
             double y = 0.0;
@@ -132,8 +124,8 @@ int main(int argc, char *argv[]) {
 
             step++;
         }
-        //----------------------------------------------------------------------------
-        if (!begin_analysis)  //gdy nie bylo analizy to zczytuje do tablic poz naliezieniu odpowiednich nazw w pliku
+        
+        if (!begin_analysis)  
         {
             if (line.find("TIMESTEP") < line.length() && !begin_timestep) {
                 atom_counter = 0;
@@ -145,9 +137,6 @@ int main(int argc, char *argv[]) {
         }
     }
     infile.close();
-    //-----------------------------------------------------------------------
-    //-----------------------------------------------------------------------
-    //------------> Creating outfile with coordinats and radius vectors <----
 
     double r_t = 0.0;
     double r_to = 0.0;
@@ -185,8 +174,6 @@ int main(int argc, char *argv[]) {
     outfile.clear();
     vectorcomponent.str("");
     vectorcomponent.clear();
-
-    //------------------------------------------------------------------------
 
     int count = 0;
 
@@ -229,7 +216,7 @@ int main(int argc, char *argv[]) {
             }
         }
     }
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Zmiany!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
     int size_of_vector = jump_time.size();
 
     double **displacement = new double *[size_of_vector];
@@ -244,7 +231,6 @@ int main(int argc, char *argv[]) {
         displacement[i][3] = changes_y[i];
         displacement[i][4] = changes_z[i];
     }
-    //-----------------------> Calculate distant <---------------------------
 
     double r_ij = 0.0;
 
@@ -313,7 +299,7 @@ int main(int argc, char *argv[]) {
     timebefore.str("");
     timebefore.clear();
 
-    //------------------------------------------------------------------------
+    
 
     minimum = DBL_MAX;
     maximum = -DBL_MAX;
@@ -330,8 +316,7 @@ int main(int argc, char *argv[]) {
     cout << "Number of change sign:  " << count << "\n";
     cout << "Maximum:  " << maximum << "\n";
     cout << "Minimum:  " << minimum << "\n";
-    //----------------------------------------------------------------
-    //------------------> Sorting from min to max <-------------------
+
 
     double swapHolder = -1.0;
     double swapIndex = 1.0;
@@ -355,8 +340,6 @@ int main(int argc, char *argv[]) {
         end--;
     }
 
-    //----------------------------------------------------------------
-    //=================> Probabity of distances <=====================
 
     int n_bins = 1000;
 
@@ -398,8 +381,7 @@ int main(int argc, char *argv[]) {
         probability[bin][1] /= count;
         probability[bin][1] /= bin_width;
     }
-    //-----------------------------------------------------------------------------
-    //---------------------Max probability ----------------------------------------
+
     double maximum_p = -DBL_MAX;
     double maximum_probability_distance = 0.0;
 
@@ -410,12 +392,11 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    //----------------------------------------------------------------------
     int time_counter = 0;
     double ave_jump_distance = 0.0;
     int jump_ave = 0;
     for (int i = 0; i < count; i++) {
-        if (displacement[i][0] >= 2.88)  // distanse equal diameter of atom Si
+        if (displacement[i][0] >= 2.88) 
         {
             if (displacement[i][0] > maximum_probability_distance) {
                 time_counter++;
@@ -436,8 +417,7 @@ int main(int argc, char *argv[]) {
     cout << "Time_counter           :      " << time_counter << "\n";
     cout << "Probability distance   :      " << maximum_probability_distance << "\n";
     cout << "Average jump distance  :      " << ave_jump_distance << "\n";
-    //----------------------------------------------------------------------
-    //----------------------------------------------------------------------
+
     stringstream probabilityname, timedistance;
 
     probabilityname << "probability.out";
@@ -467,8 +447,7 @@ int main(int argc, char *argv[]) {
 
     timedistance.str("");
     timedistance.clear();
-    //===============================================================================
-    //-------------------> Czyszczenie pamięci po tablicach <------------------------
+
 
     for (int atom_id = 0; atom_id < n_atoms; atom_id++) {
         delete[] atoms[atom_id];
@@ -494,4 +473,3 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-//================================================================================
