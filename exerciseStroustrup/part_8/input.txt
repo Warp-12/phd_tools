@@ -1,0 +1,10 @@
+student  12  34.54
+descs    32  23.43
+pancake  45  12.45
+computer 54  784.85
+cups     32  5.89
+programs 124 785.78
+books    56  89.77
+laptop   87  897.5
+tablet   65  235.11
+phone    67  147.74

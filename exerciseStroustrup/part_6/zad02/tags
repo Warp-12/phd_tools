@@ -1,0 +1,374 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARRAY_SIZE	Graph.cpp	376;"	d	file:
+Address	GUI.hpp	/^    typedef void* Address;    \/\/ Address is a synonym for void*$/;"	t	namespace:Graph_lib
+Axis	Graph.cpp	/^Axis::Axis(Orientation d, Point xy, int length, int n, string lab) :$/;"	f	class:Graph_lib::Axis
+Axis	Graph.hpp	/^struct Axis : Shape {$/;"	s	namespace:Graph_lib
+Bad_image	Graph.hpp	/^    Bad_image(int h, int w) : Fl_Image(h,w,0) { }$/;"	f	struct:Graph_lib::Bad_image
+Bad_image	Graph.hpp	/^struct Bad_image : Fl_Image {$/;"	s	namespace:Graph_lib
+Button	GUI.hpp	/^        Button(Point xy, int w, int h, const string& label, Callback cb)$/;"	f	struct:Graph_lib::Button
+Button	GUI.hpp	/^    struct Button : Widget {$/;"	s	namespace:Graph_lib
+Button_window	zad02.cpp	/^Button_window::Button_window(Point xy, int x, int w, const string& label, int xn, int yn)$/;"	f	class:Graph_lib::Button_window
+Button_window	zad02.cpp	/^struct Button_window : ::Graph_lib::My_window{$/;"	s	namespace:Graph_lib	file:
+Callback	GUI.hpp	/^    typedef void(*Callback)(Address, Address);    \/\/ FLTK's required function type for all callbacks$/;"	t	namespace:Graph_lib
+Circle	Graph.cpp	/^Circle::Circle(Point p, int rr)    \/\/ center and radius$/;"	f	class:Graph_lib::Circle
+Circle	Graph.hpp	/^struct Circle : Shape {$/;"	s	namespace:Graph_lib
+Closed_polyline	Graph.hpp	/^struct Closed_polyline : Open_polyline { \/\/ closed sequence of lines$/;"	s	namespace:Graph_lib
+Color	Graph.hpp	/^    Color(Color_type cc) :c(Fl_Color(cc)), v(visible) { }$/;"	f	struct:Graph_lib::Color
+Color	Graph.hpp	/^    Color(Color_type cc, Transparency vv) :c(Fl_Color(cc)), v(vv) { }$/;"	f	struct:Graph_lib::Color
+Color	Graph.hpp	/^    Color(Transparency vv) :c(Fl_Color()), v(vv) { }    \/\/ default color$/;"	f	struct:Graph_lib::Color
+Color	Graph.hpp	/^    Color(int cc) :c(Fl_Color(cc)), v(visible) { }$/;"	f	struct:Graph_lib::Color
+Color	Graph.hpp	/^struct Color {$/;"	s	namespace:Graph_lib
+Color_type	Graph.hpp	/^    enum Color_type {$/;"	g	struct:Graph_lib::Color
+Ellipse	Graph.hpp	/^    Ellipse(Point p, int w, int h)    \/\/ center, min, and max distance from center$/;"	f	struct:Graph_lib::Ellipse
+Ellipse	Graph.hpp	/^struct Ellipse : Shape {$/;"	s	namespace:Graph_lib
+Encoding	Graph.hpp	/^    enum Encoding { none, jpg, gif  };$/;"	g	struct:Graph_lib::Suffix
+Exit	std_lib_facilities.hpp	/^	Exit(): runtime_error("Exit") {}$/;"	f	struct:Exit
+Exit	std_lib_facilities.hpp	/^struct Exit : runtime_error {$/;"	s
+Fct	Graph.hpp	/^typedef double Fct(double);$/;"	t	namespace:Graph_lib
+Font	Graph.hpp	/^    Font(Font_type ff) :f(ff) { }$/;"	f	class:Graph_lib::Font
+Font	Graph.hpp	/^    Font(int ff) :f(ff) { }$/;"	f	class:Graph_lib::Font
+Font	Graph.hpp	/^class Font {$/;"	c	namespace:Graph_lib
+Font_type	Graph.hpp	/^    enum Font_type {$/;"	g	class:Graph_lib::Font
+Function	Graph.cpp	/^Function::Function(Fct f, double r1, double r2, Point xy,$/;"	f	class:Graph_lib::Function
+Function	Graph.hpp	/^struct Function : Shape {$/;"	s	namespace:Graph_lib
+GRAPH_GUARD	Graph.hpp	8;"	d
+GUI_GUARD	GUI.hpp	8;"	d
+Graph_lib	GUI.cpp	/^namespace Graph_lib {$/;"	n	file:
+Graph_lib	GUI.hpp	/^namespace Graph_lib {$/;"	n
+Graph_lib	Graph.cpp	/^namespace Graph_lib {$/;"	n	file:
+Graph_lib	Graph.hpp	/^namespace Graph_lib {$/;"	n
+Graph_lib	Window.cpp	/^namespace Graph_lib {$/;"	n	file:
+Graph_lib	Window.hpp	/^namespace Graph_lib$/;"	n
+Graph_lib	zad02.cpp	/^namespace Graph_lib{$/;"	n	file:
+H112	std_lib_facilities.hpp	25;"	d
+Image	Graph.cpp	/^Image::Image(Point xy, string s, Suffix::Encoding e)$/;"	f	class:Graph_lib::Image
+Image	Graph.hpp	/^struct Image : Shape {$/;"	s	namespace:Graph_lib
+In_box	GUI.hpp	/^        In_box(Point xy, int w, int h, const string& s)$/;"	f	struct:Graph_lib::In_box
+In_box	GUI.hpp	/^    struct In_box : Widget {$/;"	s	namespace:Graph_lib
+Kind	GUI.hpp	/^        enum Kind { horizontal, vertical };$/;"	g	struct:Graph_lib::Menu
+Line	Graph.cpp	/^Line::Line(Point p1, Point p2)    \/\/ construct a line from two points$/;"	f	class:Graph_lib::Line
+Line	Graph.hpp	/^struct Line : Shape {            \/\/ a Line is a Shape defined by two Points$/;"	s	namespace:Graph_lib
+Line_style	Graph.hpp	/^    Line_style(Line_style_type lst, int ww) :s(lst), w(ww) { }$/;"	f	struct:Graph_lib::Line_style
+Line_style	Graph.hpp	/^    Line_style(Line_style_type ss) :s(ss), w(0) { }$/;"	f	struct:Graph_lib::Line_style
+Line_style	Graph.hpp	/^    Line_style(int ss) :s(ss), w(0) { }$/;"	f	struct:Graph_lib::Line_style
+Line_style	Graph.hpp	/^struct Line_style {$/;"	s	namespace:Graph_lib
+Line_style_type	Graph.hpp	/^    enum Line_style_type {$/;"	g	struct:Graph_lib::Line_style
+Lines	Graph.hpp	/^struct Lines : Shape {                 \/\/ related lines$/;"	s	namespace:Graph_lib
+Mark	Graph.hpp	/^    Mark(Point xy, char c) : Marks(string(1,c))$/;"	f	struct:Graph_lib::Mark
+Mark	Graph.hpp	/^struct Mark : Marks {$/;"	s	namespace:Graph_lib
+Marked_polyline	Graph.hpp	/^    Marked_polyline(const string& m) :mark(m) { }$/;"	f	struct:Graph_lib::Marked_polyline
+Marked_polyline	Graph.hpp	/^struct Marked_polyline : Open_polyline {$/;"	s	namespace:Graph_lib
+Marks	Graph.hpp	/^    Marks(const string& m) :Marked_polyline(m)$/;"	f	struct:Graph_lib::Marks
+Marks	Graph.hpp	/^struct Marks : Marked_polyline {$/;"	s	namespace:Graph_lib
+Menu	GUI.hpp	/^        Menu(Point xy, int w, int h, Kind kk, const string& label)$/;"	f	struct:Graph_lib::Menu
+Menu	GUI.hpp	/^    struct Menu : Widget {$/;"	s	namespace:Graph_lib
+N	cwiczenie12.cpp	/^    static int offset, a, b, N;$/;"	m	class:twin	file:
+N	cwiczenie12.cpp	/^int twin::offset, twin::a, twin::b, twin::N;$/;"	m	class:twin	file:
+Open_polyline	Graph.hpp	/^struct Open_polyline : Shape {         \/\/ open sequence of lines$/;"	s	namespace:Graph_lib
+Orientation	Graph.hpp	/^    enum Orientation { x, y, z };$/;"	g	struct:Graph_lib::Axis
+Out_box	GUI.hpp	/^        Out_box(Point xy, int w, int h, const string& s)$/;"	f	struct:Graph_lib::Out_box
+Out_box	GUI.hpp	/^    struct Out_box : Widget {$/;"	s	namespace:Graph_lib
+POINT_GUARD	Point.hpp	8;"	d
+Point	Point.hpp	/^    Point() :x(0), y(0) { }$/;"	f	struct:Point
+Point	Point.hpp	/^    Point(int xx, int yy) : x(xx), y(yy) { }$/;"	f	struct:Point
+Point	Point.hpp	/^struct Point {$/;"	s
+Polygon	Graph.hpp	/^struct Polygon : Closed_polyline {    \/\/ closed sequence of non-intersecting lines$/;"	s	namespace:Graph_lib
+Range_error	std_lib_facilities.hpp	/^	Range_error(int i) :out_of_range("Range error: "+to_string(i)), index(i) { }$/;"	f	struct:Range_error
+Range_error	std_lib_facilities.hpp	/^struct Range_error : out_of_range {	\/\/ enhanced vector range error reporting$/;"	s
+Rectangle	Graph.hpp	/^    Rectangle(Point x, Point y) : w(y.x-x.x), h(y.y-x.y)$/;"	f	struct:Graph_lib::Rectangle
+Rectangle	Graph.hpp	/^    Rectangle(Point xy, int ww, int hh) : w(ww), h(hh)$/;"	f	struct:Graph_lib::Rectangle
+Rectangle	Graph.hpp	/^struct Rectangle : Shape {$/;"	s	namespace:Graph_lib
+SIMPLE_WINDOW_GUARD	Simple_window.hpp	8;"	d
+Shape	Graph.cpp	/^Shape::Shape() : $/;"	f	class:Graph_lib::Shape
+Shape	Graph.hpp	/^class Shape  {        \/\/ deals with color and style, and holds sequence of lines $/;"	c	namespace:Graph_lib
+Simple_window	Simple_window.cpp	/^Simple_window::Simple_window(Point xy, int w, int h, const string& title) :$/;"	f	class:Simple_window
+Simple_window	Simple_window.hpp	/^struct Simple_window : Graph_lib::Window {$/;"	s
+String	std_lib_facilities.hpp	/^struct String : std::string {$/;"	s
+Suffix	Graph.hpp	/^struct Suffix {$/;"	s	namespace:Graph_lib
+Text	Graph.hpp	/^    Text(Point x, const string& s) : lab(s), fnt(fl_font()), fnt_sz(fl_size()) { add(x); }$/;"	f	struct:Graph_lib::Text
+Text	Graph.hpp	/^struct Text : Shape {$/;"	s	namespace:Graph_lib
+Transparency	Graph.hpp	/^    enum Transparency { invisible = 0, visible=255 };$/;"	g	struct:Graph_lib::Color
+Unicode	std_lib_facilities.hpp	/^typedef long Unicode;$/;"	t
+Vector	std_lib_facilities.hpp	/^	Vector() { }$/;"	f	struct:Vector
+Vector	std_lib_facilities.hpp	/^	Vector(I first, I last) : std::vector<T>(first, last) {}$/;"	f	struct:Vector
+Vector	std_lib_facilities.hpp	/^	Vector(initializer_list<T> list) : std::vector<T>(list) {}$/;"	f	struct:Vector
+Vector	std_lib_facilities.hpp	/^	Vector(size_type n, const T& v) :std::vector<T>(n,v) {}$/;"	f	struct:Vector
+Vector	std_lib_facilities.hpp	/^	explicit Vector(size_type n) :std::vector<T>(n) {}$/;"	f	struct:Vector
+Vector	std_lib_facilities.hpp	/^template< class T> struct Vector : public std::vector<T> {$/;"	s
+Vector_ref	Graph.hpp	/^    Vector_ref() {}$/;"	f	class:Graph_lib::Vector_ref
+Vector_ref	Graph.hpp	/^    Vector_ref(T& a) { push_back(a); }$/;"	f	class:Graph_lib::Vector_ref
+Vector_ref	Graph.hpp	/^    Vector_ref(T* a, T* b = 0, T* c = 0, T* d = 0)$/;"	f	class:Graph_lib::Vector_ref
+Vector_ref	Graph.hpp	/^template<class T> class Vector_ref {$/;"	c	namespace:Graph_lib
+WINDOW_GUARD	Window.hpp	8;"	d
+Widget	GUI.hpp	/^        Widget(Point xy, int w, int h, const string& s, Callback cb)$/;"	f	class:Graph_lib::Widget
+Widget	GUI.hpp	/^    class Widget {$/;"	c	namespace:Graph_lib
+Window	Window.cpp	/^Window::Window(Point xy, int ww, int hh, const string& title)$/;"	f	class:Graph_lib::Window
+Window	Window.cpp	/^Window::Window(int ww, int hh, const string& title)$/;"	f	class:Graph_lib::Window
+Window	Window.hpp	/^    class Window : public Fl_Window { $/;"	c	namespace:Graph_lib
+a	cwiczenie12.cpp	/^    static int offset, a, b, N;$/;"	m	class:twin	file:
+a	cwiczenie12.cpp	/^int twin::offset, twin::a, twin::b, twin::N;$/;"	m	class:twin	file:
+add	Graph.cpp	/^void Lines::add(Point p1, Point p2)$/;"	f	class:Graph_lib::Lines
+add	Graph.cpp	/^void Polygon::add(Point p)$/;"	f	class:Graph_lib::Polygon
+add	Graph.cpp	/^void Shape::add(Point p)     \/\/ protected$/;"	f	class:Graph_lib::Shape
+add	Graph.hpp	/^    void add(Point p) { Shape::add(p); }$/;"	f	struct:Graph_lib::Open_polyline
+as_bytes	std_lib_facilities.hpp	/^template<class T> char* as_bytes(T& i)	\/\/ needed for binary I\/O$/;"	f
+as_int	Graph.hpp	/^    int as_int() const { return c; }$/;"	f	struct:Graph_lib::Color
+as_int	Graph.hpp	/^    int as_int() const { return f; }$/;"	f	class:Graph_lib::Font
+attach	GUI.cpp	/^int Menu::attach(Button& b)$/;"	f	class:Graph_lib::Menu
+attach	GUI.cpp	/^int Menu::attach(Button* p)$/;"	f	class:Graph_lib::Menu
+attach	GUI.cpp	/^void Button::attach(Window& win)$/;"	f	class:Graph_lib::Button
+attach	GUI.cpp	/^void In_box::attach(Window& win)$/;"	f	class:Graph_lib::In_box
+attach	GUI.cpp	/^void Out_box::attach(Window& win)$/;"	f	class:Graph_lib::Out_box
+attach	GUI.hpp	/^        void attach(Window& win)    \/\/ attach all buttons$/;"	f	struct:Graph_lib::Menu
+attach	Window.cpp	/^void Window::attach(Widget& w)$/;"	f	class:Graph_lib::Window
+attach	Window.hpp	/^        void attach(Shape& s) { shapes.push_back(&s); }$/;"	f	class:Graph_lib::Window
+b	cwiczenie12.cpp	/^    static int offset, a, b, N;$/;"	m	class:twin	file:
+b	cwiczenie12.cpp	/^int twin::offset, twin::a, twin::b, twin::N;$/;"	m	class:twin	file:
+b11	zad02.cpp	/^    void Button_window::b11() {get_xy(menu1.selection[0].loc);}$/;"	f	class:Graph_lib::Button_window
+b12	zad02.cpp	/^    void Button_window::b12() {get_xy(menu1.selection[1].loc);}$/;"	f	class:Graph_lib::Button_window
+b13	zad02.cpp	/^    void Button_window::b13() {get_xy(menu1.selection[2].loc);}$/;"	f	class:Graph_lib::Button_window
+b14	zad02.cpp	/^    void Button_window::b14() {get_xy(menu1.selection[3].loc);}$/;"	f	class:Graph_lib::Button_window
+b21	zad02.cpp	/^    void Button_window::b21() {get_xy(menu2.selection[0].loc);}$/;"	f	class:Graph_lib::Button_window
+b22	zad02.cpp	/^    void Button_window::b22() {get_xy(menu2.selection[1].loc);}$/;"	f	class:Graph_lib::Button_window
+b23	zad02.cpp	/^    void Button_window::b23() {get_xy(menu2.selection[2].loc);}$/;"	f	class:Graph_lib::Button_window
+b24	zad02.cpp	/^    void Button_window::b24() {get_xy(menu2.selection[3].loc);}$/;"	f	class:Graph_lib::Button_window
+b31	zad02.cpp	/^    void Button_window::b31() {get_xy(menu3.selection[0].loc);}$/;"	f	class:Graph_lib::Button_window
+b32	zad02.cpp	/^    void Button_window::b32() {get_xy(menu3.selection[1].loc);}$/;"	f	class:Graph_lib::Button_window
+b33	zad02.cpp	/^    void Button_window::b33() {get_xy(menu3.selection[2].loc);}$/;"	f	class:Graph_lib::Button_window
+b34	zad02.cpp	/^    void Button_window::b34() {get_xy(menu3.selection[3].loc);}$/;"	f	class:Graph_lib::Button_window
+b41	zad02.cpp	/^   void Button_window::b41() {get_xy(menu4.selection[0].loc);}$/;"	f	class:Graph_lib::Button_window
+b42	zad02.cpp	/^   void Button_window::b42() {get_xy(menu4.selection[1].loc);}$/;"	f	class:Graph_lib::Button_window
+b43	zad02.cpp	/^   void Button_window::b43() {get_xy(menu4.selection[2].loc);}$/;"	f	class:Graph_lib::Button_window
+b44	zad02.cpp	/^   void Button_window::b44() {get_xy(menu4.selection[3].loc);}$/;"	f	class:Graph_lib::Button_window
+black	Graph.hpp	/^        black=FL_BLACK,$/;"	e	enum:Graph_lib::Color::Color_type
+blue	Graph.hpp	/^        blue=FL_BLUE,$/;"	e	enum:Graph_lib::Color::Color_type
+button_pushed	Simple_window.hpp	/^    bool button_pushed;     \/\/ implementation detail$/;"	m	struct:Simple_window
+c	Graph.hpp	/^    Fl_Color c;$/;"	m	struct:Graph_lib::Color
+can_open	Graph.cpp	/^bool can_open(const string& s)$/;"	f	namespace:Graph_lib
+cb_next	Simple_window.cpp	/^void Simple_window::cb_next(Graph_lib::Address, Graph_lib::Address pw)$/;"	f	class:Simple_window
+center	Graph.cpp	/^Point Circle::center() const$/;"	f	class:Graph_lib::Circle
+center	Graph.hpp	/^    Point center() const { return Point(point(0).x+w,point(0).y+h); }$/;"	f	struct:Graph_lib::Ellipse
+color	Graph.hpp	/^    Color color() const { return lcolor; }$/;"	f	class:Graph_lib::Shape
+courier	Graph.hpp	/^        courier=FL_COURIER,$/;"	e	enum:Graph_lib::Font::Font_type
+courier_bold	Graph.hpp	/^        courier_bold=FL_COURIER_BOLD,$/;"	e	enum:Graph_lib::Font::Font_type
+courier_bold_italic	Graph.hpp	/^        courier_bold_italic=FL_COURIER_BOLD_ITALIC,$/;"	e	enum:Graph_lib::Font::Font_type
+courier_italic	Graph.hpp	/^        courier_italic=FL_COURIER_ITALIC,$/;"	e	enum:Graph_lib::Font::Font_type
+cx	Graph.hpp	/^    int cx,cy; $/;"	m	struct:Graph_lib::Image
+cy	Graph.hpp	/^    int cx,cy; $/;"	m	struct:Graph_lib::Image
+cyan	Graph.hpp	/^        cyan=FL_CYAN,$/;"	e	enum:Graph_lib::Color::Color_type
+dark_blue	Graph.hpp	/^        dark_blue=FL_DARK_BLUE,$/;"	e	enum:Graph_lib::Color::Color_type
+dark_cyan	Graph.hpp	/^        dark_cyan=FL_DARK_CYAN$/;"	e	enum:Graph_lib::Color::Color_type
+dark_green	Graph.hpp	/^        dark_green=FL_DARK_GREEN,$/;"	e	enum:Graph_lib::Color::Color_type
+dark_magenta	Graph.hpp	/^        dark_magenta=FL_DARK_MAGENTA,$/;"	e	enum:Graph_lib::Color::Color_type
+dark_red	Graph.hpp	/^        dark_red=FL_DARK_RED,$/;"	e	enum:Graph_lib::Color::Color_type
+dark_yellow	Graph.hpp	/^        dark_yellow=FL_DARK_YELLOW,$/;"	e	enum:Graph_lib::Color::Color_type
+dash	Graph.hpp	/^        dash=FL_DASH,              \/\/ - - - -$/;"	e	enum:Graph_lib::Line_style::Line_style_type
+dashdot	Graph.hpp	/^        dashdot=FL_DASHDOT,        \/\/ - . - . $/;"	e	enum:Graph_lib::Line_style::Line_style_type
+dashdotdot	Graph.hpp	/^        dashdotdot=FL_DASHDOTDOT,  \/\/ -..-..$/;"	e	enum:Graph_lib::Line_style::Line_style_type
+detach	Window.cpp	/^void Window::detach(Shape& s)$/;"	f	class:Graph_lib::Window
+detach	Window.cpp	/^void Window::detach(Widget& b)$/;"	f	class:Graph_lib::Window
+do_it	GUI.hpp	/^        Callback do_it;$/;"	m	class:Graph_lib::Widget
+dot	Graph.hpp	/^        dot=FL_DOT,                \/\/ ....... $/;"	e	enum:Graph_lib::Line_style::Line_style_type
+draw	Graph.cpp	/^void Shape::draw() const$/;"	f	class:Graph_lib::Shape
+draw	Graph.hpp	/^    void draw(int x,int y, int, int, int, int) { draw_empty(x,y); }$/;"	f	struct:Graph_lib::Bad_image
+draw	Window.cpp	/^void Window::draw()$/;"	f	class:Graph_lib::Window
+draw_lines	Graph.cpp	/^void Axis::draw_lines() const$/;"	f	class:Graph_lib::Axis
+draw_lines	Graph.cpp	/^void Circle::draw_lines() const$/;"	f	class:Graph_lib::Circle
+draw_lines	Graph.cpp	/^void Closed_polyline::draw_lines() const$/;"	f	class:Graph_lib::Closed_polyline
+draw_lines	Graph.cpp	/^void Ellipse::draw_lines() const$/;"	f	class:Graph_lib::Ellipse
+draw_lines	Graph.cpp	/^void Image::draw_lines() const$/;"	f	class:Graph_lib::Image
+draw_lines	Graph.cpp	/^void Lines::draw_lines() const$/;"	f	class:Graph_lib::Lines
+draw_lines	Graph.cpp	/^void Marked_polyline::draw_lines() const$/;"	f	class:Graph_lib::Marked_polyline
+draw_lines	Graph.cpp	/^void Open_polyline::draw_lines() const$/;"	f	class:Graph_lib::Open_polyline
+draw_lines	Graph.cpp	/^void Polygon::draw_lines() const$/;"	f	class:Graph_lib::Polygon
+draw_lines	Graph.cpp	/^void Rectangle::draw_lines() const$/;"	f	class:Graph_lib::Rectangle
+draw_lines	Graph.cpp	/^void Shape::draw_lines() const$/;"	f	class:Graph_lib::Shape
+draw_lines	Graph.cpp	/^void Text::draw_lines() const$/;"	f	class:Graph_lib::Text
+draw_mark	Graph.cpp	/^void draw_mark(Point xy, char c)$/;"	f	namespace:Graph_lib
+error	std_lib_facilities.hpp	/^inline void error(const string& s)$/;"	f
+error	std_lib_facilities.hpp	/^inline void error(const string& s, const string& s2)$/;"	f
+error	std_lib_facilities.hpp	/^inline void error(const string& s, int i)$/;"	f
+f	Graph.hpp	/^    int f;$/;"	m	class:Graph_lib::Font
+fcolor	Graph.hpp	/^    Color fcolor;                      \/\/ fill color$/;"	m	class:Graph_lib::Shape
+fill_color	Graph.hpp	/^    Color fill_color() const { return fcolor; }$/;"	f	class:Graph_lib::Shape
+find	std_lib_facilities.hpp	/^Iterator<C> find(C& c, Val v)$/;"	f
+find_if	std_lib_facilities.hpp	/^Iterator<C> find_if(C& c, Pred p)$/;"	f
+fn	Graph.hpp	/^    Text fn;$/;"	m	struct:Graph_lib::Image
+fnt	Graph.hpp	/^    Font fnt;$/;"	m	struct:Graph_lib::Text
+fnt_sz	Graph.hpp	/^    int fnt_sz;$/;"	m	struct:Graph_lib::Text
+focus1	Graph.hpp	/^    Point focus1() const { return Point(center().x+int(sqrt(double(w*w-h*h))),center().y); }$/;"	f	struct:Graph_lib::Ellipse
+focus2	Graph.hpp	/^    Point focus2() const { return Point(center().x-int(sqrt(double(w*w-h*h))),center().y); }$/;"	f	struct:Graph_lib::Ellipse
+font	Graph.hpp	/^    Font font() const { return Font(fnt); }$/;"	f	struct:Graph_lib::Text
+font_size	Graph.hpp	/^    int font_size() const { return fnt_sz; }$/;"	f	struct:Graph_lib::Text
+get_encoding	Graph.cpp	/^Suffix::Encoding get_encoding(const string& s)$/;"	f	namespace:Graph_lib
+get_int	GUI.cpp	/^int In_box::get_int()$/;"	f	class:Graph_lib::In_box
+get_xy	zad02.cpp	/^   void Button_window::get_xy(Point p) {$/;"	f	class:Graph_lib::Button_window
+gif	Graph.hpp	/^    enum Encoding { none, jpg, gif  };$/;"	e	enum:Graph_lib::Suffix::Encoding
+green	Graph.hpp	/^        green=FL_GREEN,$/;"	e	enum:Graph_lib::Color::Color_type
+gui_main	Window.cpp	/^int gui_main()$/;"	f	namespace:Graph_lib
+h	Graph.hpp	/^    int h;    \/\/ height$/;"	m	struct:Graph_lib::Rectangle
+h	Graph.hpp	/^    int h;$/;"	m	struct:Graph_lib::Ellipse
+h	Graph.hpp	/^    int w,h;  \/\/ define "masking box" within image relative to position (cx,cy)$/;"	m	struct:Graph_lib::Image
+h	Window.hpp	/^        int w,h;                   \/\/ window size$/;"	m	class:Graph_lib::Window
+hash	std_lib_facilities.hpp	/^    template<> struct hash<String>$/;"	s	namespace:std
+height	GUI.hpp	/^        int height;$/;"	m	class:Graph_lib::Widget
+height	Graph.hpp	/^    int height() const { return h; }$/;"	f	struct:Graph_lib::Rectangle
+helvetica	Graph.hpp	/^        helvetica=FL_HELVETICA,$/;"	e	enum:Graph_lib::Font::Font_type
+helvetica_bold	Graph.hpp	/^        helvetica_bold=FL_HELVETICA_BOLD,$/;"	e	enum:Graph_lib::Font::Font_type
+helvetica_bold_italic	Graph.hpp	/^        helvetica_bold_italic=FL_HELVETICA_BOLD_ITALIC,$/;"	e	enum:Graph_lib::Font::Font_type
+helvetica_italic	Graph.hpp	/^        helvetica_italic=FL_HELVETICA_ITALIC,$/;"	e	enum:Graph_lib::Font::Font_type
+hide	GUI.hpp	/^        virtual void hide() { pw->hide(); }$/;"	f	class:Graph_lib::Widget
+hide	GUI.hpp	/^        void hide()                 \/\/ hide all buttons$/;"	f	struct:Graph_lib::Menu
+horizontal	GUI.hpp	/^        enum Kind { horizontal, vertical };$/;"	e	enum:Graph_lib::Menu::Kind
+index	std_lib_facilities.hpp	/^	int index;$/;"	m	struct:Range_error
+init	Window.cpp	/^void Window::init()$/;"	f	class:Graph_lib::Window
+invisible	Graph.hpp	/^    enum Transparency { invisible = 0, visible=255 };$/;"	e	enum:Graph_lib::Color::Transparency
+isprime	cwiczenie12.cpp	/^bool isprime (int arg) {$/;"	f
+jpg	Graph.hpp	/^    enum Encoding { none, jpg, gif  };$/;"	e	enum:Graph_lib::Suffix::Encoding
+k	GUI.hpp	/^        Kind k;$/;"	m	struct:Graph_lib::Menu
+keep_window_open	std_lib_facilities.hpp	/^inline void keep_window_open()$/;"	f
+keep_window_open	std_lib_facilities.hpp	/^inline void keep_window_open(string s)$/;"	f
+lab	Graph.hpp	/^    string lab;    \/\/ label$/;"	m	struct:Graph_lib::Text
+label	GUI.hpp	/^        string label;$/;"	m	class:Graph_lib::Widget
+label	Graph.hpp	/^    Text label;$/;"	m	struct:Graph_lib::Axis
+label	Graph.hpp	/^    string label() const { return lab; }$/;"	f	struct:Graph_lib::Text
+lcolor	Graph.hpp	/^    Color lcolor;                      \/\/ color for lines and characters$/;"	m	class:Graph_lib::Shape
+line_intersect	Graph.cpp	/^inline pair<double,double> line_intersect(Point p1, Point p2, Point p3, Point p4, bool& parallel) $/;"	f	namespace:Graph_lib
+line_segment_intersect	Graph.cpp	/^bool line_segment_intersect(Point p1, Point p2, Point p3, Point p4, Point& intersection){$/;"	f	namespace:Graph_lib
+loc	GUI.hpp	/^        Point loc;$/;"	m	class:Graph_lib::Widget
+ls	Graph.hpp	/^    Line_style ls; $/;"	m	class:Graph_lib::Shape
+m	cwiczenie12.cpp	/^    static double m, n;$/;"	m	class:twin	file:
+m	cwiczenie12.cpp	/^double twin::m, twin::n;$/;"	m	class:twin	file:
+magenta	Graph.hpp	/^        magenta=FL_MAGENTA,$/;"	e	enum:Graph_lib::Color::Color_type
+main	cwiczenie12.cpp	/^int main () {$/;"	f
+main	zad02.cpp	/^int main()$/;"	f
+major	Graph.hpp	/^    int major() const { return w; }$/;"	f	struct:Graph_lib::Ellipse
+major	Graph.hpp	18;"	d
+mark	Graph.hpp	/^    string mark;$/;"	m	struct:Graph_lib::Marked_polyline
+max	std_lib_facilities.hpp	198;"	d
+menu1	zad02.cpp	/^   Menu menu1;$/;"	m	struct:Graph_lib::Button_window	file:
+menu2	zad02.cpp	/^   Menu menu2;$/;"	m	struct:Graph_lib::Button_window	file:
+menu3	zad02.cpp	/^   Menu menu3;$/;"	m	struct:Graph_lib::Button_window	file:
+menu4	zad02.cpp	/^   Menu menu4;$/;"	m	struct:Graph_lib::Button_window	file:
+min	std_lib_facilities.hpp	197;"	d
+minor	Graph.hpp	/^    int minor() const { return h; }$/;"	f	struct:Graph_lib::Ellipse
+minor	Graph.hpp	19;"	d
+move	GUI.hpp	/^        virtual void move(int dx,int dy) { hide(); pw->position(loc.x+=dx, loc.y+=dy); show(); }$/;"	f	class:Graph_lib::Widget
+move	GUI.hpp	/^        void move(int dx, int dy)   \/\/ move all buttons$/;"	f	struct:Graph_lib::Menu
+move	Graph.cpp	/^void Axis::move(int dx, int dy)$/;"	f	class:Graph_lib::Axis
+move	Graph.cpp	/^void Shape::move(int dx, int dy)    \/\/ move the shape +=dx and +=dy$/;"	f	class:Graph_lib::Shape
+n	cwiczenie12.cpp	/^    static double m, n;$/;"	m	class:twin	file:
+n	cwiczenie12.cpp	/^double twin::m, twin::n;$/;"	m	class:twin	file:
+narrow_cast	std_lib_facilities.hpp	/^template<class R, class A> R narrow_cast(const A& a)$/;"	f
+next	Simple_window.cpp	/^void Simple_window::next()$/;"	f	class:Simple_window
+next_button	Simple_window.hpp	/^    Graph_lib::Button next_button;     \/\/ the "next" button$/;"	m	struct:Simple_window
+none	Graph.hpp	/^    enum Encoding { none, jpg, gif  };$/;"	e	enum:Graph_lib::Suffix::Encoding
+notches	Graph.hpp	/^    Lines notches;$/;"	m	struct:Graph_lib::Axis
+number_of_points	Graph.hpp	/^    int number_of_points() const { return int(points.size()); }$/;"	f	class:Graph_lib::Shape
+offset	GUI.hpp	/^        int offset;$/;"	m	struct:Graph_lib::Menu
+offset	cwiczenie12.cpp	/^    static int offset, a, b, N;$/;"	m	class:twin	file:
+offset	cwiczenie12.cpp	/^int twin::offset, twin::a, twin::b, twin::N;$/;"	m	class:twin	file:
+operator !=	Point.hpp	/^inline bool operator!=(Point a, Point b) { return !(a==b); }$/;"	f
+operator ()	std_lib_facilities.hpp	/^        size_t operator()(const String& s) const$/;"	f	struct:std::hash
+operator ==	Point.hpp	/^inline bool operator==(Point a, Point b) { return a.x==b.x && a.y==b.y; } $/;"	f
+operator []	Graph.hpp	/^    T& operator[](int i) { return *v[i]; }$/;"	f	class:Graph_lib::Vector_ref
+operator []	Graph.hpp	/^    const T& operator[](int i) const { return *v[i]; }$/;"	f	class:Graph_lib::Vector_ref
+operator []	std_lib_facilities.hpp	/^	T& operator[](unsigned int i) \/\/ rather than return at(i);$/;"	f	struct:Vector
+operator []	std_lib_facilities.hpp	/^	char& operator[](unsigned int i) \/\/ rather than return at(i);$/;"	f	struct:String
+operator []	std_lib_facilities.hpp	/^	const T& operator[](unsigned int i) const$/;"	f	struct:Vector
+operator []	std_lib_facilities.hpp	/^	const char& operator[](unsigned int i) const$/;"	f	struct:String
+out_xy	zad02.cpp	/^   Out_box out_xy;$/;"	m	struct:Graph_lib::Button_window	file:
+own	GUI.hpp	/^        Window* own;    \/\/ every Widget belongs to a Window$/;"	m	class:Graph_lib::Widget
+owned	Graph.hpp	/^    vector<T*> owned;$/;"	m	class:Graph_lib::Vector_ref
+p	Graph.hpp	/^    Fl_Image* p;$/;"	m	struct:Graph_lib::Image
+point	Graph.hpp	/^    Point point(int i) const { return points[i]; } \/\/ read only access to points$/;"	f	class:Graph_lib::Shape
+points	Graph.hpp	/^    vector<Point> points;              \/\/ not used by all shapes$/;"	m	class:Graph_lib::Shape
+push_back	Graph.hpp	/^    void push_back(T& s) { v.push_back(&s); }$/;"	f	class:Graph_lib::Vector_ref
+push_back	Graph.hpp	/^    void push_back(T* p) { v.push_back(p); owned.push_back(p); }$/;"	f	class:Graph_lib::Vector_ref
+put	GUI.cpp	/^void Out_box::put(const string& s)$/;"	f	class:Graph_lib::Out_box
+put_on_top	Window.cpp	/^void Window::put_on_top(Shape& p) {$/;"	f	class:Graph_lib::Window
+pw	GUI.hpp	/^        Fl_Widget* pw;  \/\/ connection to the FLTK Widget$/;"	m	class:Graph_lib::Widget
+r	Graph.hpp	/^    int r;$/;"	m	struct:Graph_lib::Circle
+radius	Graph.hpp	/^    int radius() const { return r; }$/;"	f	struct:Graph_lib::Circle
+randint	std_lib_facilities.hpp	/^inline int randint(int max) { return randint(0, max); }$/;"	f
+randint	std_lib_facilities.hpp	/^inline int randint(int min, int max) { static default_random_engine ran; return uniform_int_distribution<>{min, max}(ran); }$/;"	f
+red	Graph.hpp	/^        red=FL_RED,$/;"	e	enum:Graph_lib::Color::Color_type
+reference_to	GUI.hpp	/^    template<class W> W& reference_to(Address pw)$/;"	f	namespace:Graph_lib
+resize	Window.hpp	/^        void resize(int ww, int hh) { w=ww, h=hh; size(ww,hh); }$/;"	f	class:Graph_lib::Window
+s	Graph.hpp	/^    int s;$/;"	m	struct:Graph_lib::Line_style
+screen	Graph.hpp	/^        screen=FL_SCREEN,$/;"	e	enum:Graph_lib::Font::Font_type
+screen_bold	Graph.hpp	/^        screen_bold=FL_SCREEN_BOLD,$/;"	e	enum:Graph_lib::Font::Font_type
+selection	GUI.hpp	/^        Vector_ref<Button> selection;$/;"	m	struct:Graph_lib::Menu
+set_color	Graph.cpp	/^void Axis::set_color(Color c)$/;"	f	class:Graph_lib::Axis
+set_color	Graph.hpp	/^    void set_color(Color col) { lcolor = col; }$/;"	f	class:Graph_lib::Shape
+set_consts	cwiczenie12.cpp	/^    static void set_consts (int p1, int p2, int p3, int p4,$/;"	f	class:twin
+set_fill_color	Graph.hpp	/^    void set_fill_color(Color col) { fcolor = col; }$/;"	f	class:Graph_lib::Shape
+set_font	Graph.hpp	/^    void set_font(Font f) { fnt = f; }$/;"	f	struct:Graph_lib::Text
+set_font_size	Graph.hpp	/^    void set_font_size(int s) { fnt_sz = s; }$/;"	f	struct:Graph_lib::Text
+set_label	Graph.hpp	/^    void set_label(const string& s) { lab = s; }$/;"	f	struct:Graph_lib::Text
+set_label	Window.hpp	/^        void set_label(const string& s) { copy_label(s.c_str()); }$/;"	f	class:Graph_lib::Window
+set_major	Graph.hpp	/^    void set_major(int ww) { w=ww; }$/;"	f	struct:Graph_lib::Ellipse
+set_mask	Graph.hpp	/^    void set_mask(Point xy, int ww, int hh) { w=ww; h=hh; cx=xy.x; cy=xy.y; }$/;"	f	struct:Graph_lib::Image
+set_minor	Graph.hpp	/^    void set_minor(int hh) { h=hh; }$/;"	f	struct:Graph_lib::Ellipse
+set_point	Graph.cpp	/^void Shape::set_point(int i,Point p)        \/\/ not used; not necessary so far$/;"	f	class:Graph_lib::Shape
+set_radius	Graph.hpp	/^    void set_radius(int rr) { r=rr; }$/;"	f	struct:Graph_lib::Circle
+set_style	Graph.hpp	/^    void set_style(Line_style sty) { ls = sty; }$/;"	f	class:Graph_lib::Shape
+set_visibility	Graph.hpp	/^    void set_visibility(Transparency vv) { v=vv; }$/;"	f	struct:Graph_lib::Color
+shapes	Window.hpp	/^        vector<Shape*> shapes;     \/\/ shapes attached to window$/;"	m	class:Graph_lib::Window
+show	GUI.hpp	/^        virtual void show() { pw->show(); }$/;"	f	class:Graph_lib::Widget
+show	GUI.hpp	/^        void show()                 \/\/ show all buttons$/;"	f	struct:Graph_lib::Menu
+simple_error	std_lib_facilities.hpp	/^inline void simple_error(string s)	\/\/ write ``error: s and exit program$/;"	f
+size	Graph.hpp	/^    int size() const { return v.size(); }$/;"	f	class:Graph_lib::Vector_ref
+solid	Graph.hpp	/^        solid=FL_SOLID,            \/\/ -------$/;"	e	enum:Graph_lib::Line_style::Line_style_type
+sort	std_lib_facilities.hpp	/^void sort(C& c)$/;"	f
+sort	std_lib_facilities.hpp	/^void sort(C& c, Pred p)$/;"	f
+std	std_lib_facilities.hpp	/^namespace std {$/;"	n
+style	Graph.hpp	/^    Line_style style() const { return ls; }$/;"	f	class:Graph_lib::Shape
+style	Graph.hpp	/^    int style() const { return s; }$/;"	f	struct:Graph_lib::Line_style
+symbol	Graph.hpp	/^        symbol=FL_SYMBOL,$/;"	e	enum:Graph_lib::Font::Font_type
+times	Graph.hpp	/^        times=FL_TIMES,$/;"	e	enum:Graph_lib::Font::Font_type
+times_bold	Graph.hpp	/^        times_bold=FL_TIMES_BOLD,$/;"	e	enum:Graph_lib::Font::Font_type
+times_bold_italic	Graph.hpp	/^        times_bold_italic=FL_TIMES_BOLD_ITALIC,$/;"	e	enum:Graph_lib::Font::Font_type
+times_italic	Graph.hpp	/^        times_italic=FL_TIMES_ITALIC,$/;"	e	enum:Graph_lib::Font::Font_type
+to_string	std_lib_facilities.hpp	/^template<class T> string to_string(const T& t)$/;"	f
+twin	cwiczenie12.cpp	/^    twin (double angle) {$/;"	f	class:twin
+twin	cwiczenie12.cpp	/^class twin {$/;"	c	file:
+v	Graph.hpp	/^    char v;    \/\/ invisible and visible for now$/;"	m	struct:Graph_lib::Color
+v	Graph.hpp	/^    vector<T*> v;$/;"	m	class:Graph_lib::Vector_ref
+vector	std_lib_facilities.hpp	98;"	d
+vertical	GUI.hpp	/^        enum Kind { horizontal, vertical };$/;"	e	enum:Graph_lib::Menu::Kind
+visibility	Graph.hpp	/^    char visibility() const { return v; } $/;"	f	struct:Graph_lib::Color
+visible	Graph.hpp	/^    enum Transparency { invisible = 0, visible=255 };$/;"	e	enum:Graph_lib::Color::Transparency
+w	Graph.hpp	/^    int w,h;  \/\/ define "masking box" within image relative to position (cx,cy)$/;"	m	struct:Graph_lib::Image
+w	Graph.hpp	/^    int w;    \/\/ width$/;"	m	struct:Graph_lib::Rectangle
+w	Graph.hpp	/^    int w;$/;"	m	struct:Graph_lib::Ellipse
+w	Graph.hpp	/^    int w;$/;"	m	struct:Graph_lib::Line_style
+w	Window.hpp	/^        int w,h;                   \/\/ window size$/;"	m	class:Graph_lib::Window
+wait_for_button	Simple_window.cpp	/^bool Simple_window::wait_for_button()$/;"	f	class:Simple_window
+white	Graph.hpp	/^        white=FL_WHITE,$/;"	e	enum:Graph_lib::Color::Color_type
+width	GUI.hpp	/^        int width;$/;"	m	class:Graph_lib::Widget
+width	Graph.hpp	/^    int width() const { return w; }$/;"	f	struct:Graph_lib::Line_style
+width	Graph.hpp	/^    int width() const { return w; }$/;"	f	struct:Graph_lib::Rectangle
+x	Graph.hpp	/^    enum Orientation { x, y, z };$/;"	e	enum:Graph_lib::Axis::Orientation
+x	Point.hpp	/^    int x, y;$/;"	m	struct:Point
+x	cwiczenie12.cpp	/^    int x, y;$/;"	m	class:twin	file:
+x_max	Window.hpp	/^        int x_max() const { return w; }$/;"	f	class:Graph_lib::Window
+x_max	Window.hpp	/^    inline int x_max() { return Fl::w(); } \/\/ width of screen in pixels$/;"	f	namespace:Graph_lib
+y	Graph.hpp	/^    enum Orientation { x, y, z };$/;"	e	enum:Graph_lib::Axis::Orientation
+y	Point.hpp	/^    int x, y;$/;"	m	struct:Point
+y	cwiczenie12.cpp	/^    int x, y;$/;"	m	class:twin	file:
+y_max	Window.hpp	/^        int y_max() const { return h; }$/;"	f	class:Graph_lib::Window
+y_max	Window.hpp	/^    inline int y_max() { return Fl::h(); } \/\/ height of screen in pixels$/;"	f	namespace:Graph_lib
+yellow	Graph.hpp	/^        yellow=FL_YELLOW,$/;"	e	enum:Graph_lib::Color::Color_type
+z	Graph.hpp	/^    enum Orientation { x, y, z };$/;"	e	enum:Graph_lib::Axis::Orientation
+zapf_dingbats	Graph.hpp	/^        zapf_dingbats=FL_ZAPF_DINGBATS$/;"	e	enum:Graph_lib::Font::Font_type
+~Image	Graph.hpp	/^    ~Image() { delete p; }$/;"	f	struct:Graph_lib::Image
+~Shape	Graph.hpp	/^    virtual ~Shape() { }$/;"	f	class:Graph_lib::Shape
+~Vector_ref	Graph.hpp	/^    ~Vector_ref() { for (int i=0; i<owned.size(); ++i) delete owned[i]; }$/;"	f	class:Graph_lib::Vector_ref
+~Widget	GUI.hpp	/^        virtual ~Widget() { }$/;"	f	class:Graph_lib::Widget
+~Window	Window.hpp	/^        virtual ~Window() { }$/;"	f	class:Graph_lib::Window

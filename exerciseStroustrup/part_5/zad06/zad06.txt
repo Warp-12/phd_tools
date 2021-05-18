@@ -1,0 +1,6 @@
+Zrobic zadanie 19 ze str 485. Porozdzielac klasy na pliki .hpp i .cpp wedle wlasnego uznania. Niech wszystko sie rysuje w jednym okienku.
+
+Skopiowac dzialajacy projekt z katalogu cwiczenie12 ze wszystkimi plikami i zmodyfikowac plik cwiczenie12.cpp. Zmienic mu nazwe na zad06.cpp !
+Sworzyc dodatkowe pliki *.cpp ani *.hpp. Uwaga! wszystkie pliku musza zaczynac swoja nazwe od zad06_ czyli np. zad06_Star.hpp. Nie uzywac plikow *.h
+
+Razem z rozwiazanym zadaniem przyslac screenshota.

@@ -1,0 +1,6 @@
+Zrobic zadanie 12 ze str 439
+
+Skopiowac dzialajacy projekt z katalogu cwiczenie12 ze wszystkimi plikami i zmodyfikowac plik cwiczenie12.cpp. Zmienic mu nazwe na zad03.cpp !
+Nie tworzyc dodatkowych plikow *.cpp ani *.hpp. Nie uzywac plikow *.h.
+
+Razem z rozwiazanym zadaniem przyslac screenshota.

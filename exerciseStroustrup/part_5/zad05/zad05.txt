@@ -1,0 +1,7 @@
+Zrobic zadania 1,2,3,14 ze stron 484 i 485. Porozdzielac klasy na pliki .hpp i .cpp wedle wlasnego uznania. Narysowac w okienku po jednym
+(lub wiecej) przykladzie utworzonych klas Arc, Box, Arrow. Niech wszystko sie rysuje w jednym okienku.
+
+Skopiowac dzialajacy projekt z katalogu cwiczenie12 ze wszystkimi plikami i zmodyfikowac plik cwiczenie12.cpp. Zmienic mu nazwe na zad05.cpp !
+Sworzyc dodatkowe pliki *.cpp ani *.hpp. Uwaga! wszystkie pliku musza zaczynac swoja nazwe od zad05_ czyli np. zad05_Arc.hpp. Nie uzywac plikow *.h
+
+Razem z rozwiazanym zadaniem przyslac screenshota.

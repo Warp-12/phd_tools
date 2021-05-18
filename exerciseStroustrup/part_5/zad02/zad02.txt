@@ -1,0 +1,7 @@
+Zrobic zadania 1,2,3,4 ze str 438. Wszystkie w jednym programie: niech wszystko sie rysuje w jednym okienku. Dodatkowo narysowac jedna
+fajna rzecz od siebie, np. jakis fraktal :)
+
+Skopiowac dzialajacy projekt z katalogu cwiczenie12 ze wszystkimi plikami i zmodyfikowac plik cwiczenie12.cpp. Zmienic mu nazwe na zad02.cpp !
+Nie tworzyc dodatkowych plikow *.cpp ani *.hpp. Nie uzywac plikow *.h.
+
+Razem z rozwiazanym zadaniem przyslac screenshota.

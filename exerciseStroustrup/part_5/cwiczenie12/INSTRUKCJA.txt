@@ -1,0 +1,28 @@
+To jest ćwiczenie wyprzedzające to czym się zajmiemy za tydzień - rozdział 12.
+
+W tym katalogu znajduje się kompletny, działający przykład z podrozdziału 12.3 str.415.
+
+Jako ćwiczenie należy go sobie skompilować i uruchomić.
+
+Osoby które nie używają virtualboxa muszą same sobie z tym poradzić.
+
+Osoby które używają virtualboxa:
+
+1. Najpierw trzeba zainstalować bibliotekę fltk, którą będziemy tutaj używać. Aby to zrobić należy otworzyć okienko terminala i wpisać polecenie
+
+   su
+   # następnie wpisać hasło roota, które brzmi:
+   student
+   # następnie należy napisać instrukcję instalacji biblioteki fltk:
+   aptitude install libfltk1.3-compat-headers
+   # gdy operacja się zakończy, to należy zamknąć okienko terminala
+
+2. Następnie należy skompilować program. Można to zrobić na dwa sposoby:
+2.1. W okienku terminala przejść do katalogu z tym ćwiczeniem i wpisać polecenie
+
+   make
+
+   # program się skompiluje, ponieważ przygotowałem minimalny plik makefile który będzie tutaj działał
+
+2.2. Drugi sposób, dla osób które wolą używać kdevelopa: należy wprowadzić wszystkie pliki do projektu w kdevelopie i tam go skompilować :)
+
