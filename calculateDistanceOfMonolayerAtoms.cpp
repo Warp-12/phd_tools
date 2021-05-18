@@ -15,7 +15,6 @@ using namespace RawStateLAMMPSTools;
 
 int main(int argc, char* argv[])
 {
-//---------------------------------------------------------------------------
     (void)argc;
     (void)argv;
 
@@ -41,7 +40,7 @@ int main(int argc, char* argv[])
 
 
     Atom **timestep_atoms  = new Atom *[number_of_readings];
-//---------------------------------------------------------------------------
+
     for(int step_id = 0; step_id < number_of_readings; step_id++){
 
         System *auAtoms = new System;
@@ -69,7 +68,6 @@ int main(int argc, char* argv[])
         }
         delete auAtoms;
     }
-//---------------------------------------------------------------------------
 
     double r_t_i  = 0.0;
     double r_to_i = 0.0;
@@ -109,7 +107,7 @@ int main(int argc, char* argv[])
             atoms_j[i][3] = r_t_j;
             atoms_j[i][4] = msd_j;
     }
-//--------------------------------------------------------------------------------------------------
+
    double sum_ij = 0.0;
 
    for(int i = 0; i < number_of_readings; i++) {
@@ -120,8 +118,6 @@ int main(int argc, char* argv[])
    cout << "AVERAGE DISTANCE OF ATOM_I AND ATOM_J: " << sum_ij << "\n";
 
 
-
-//--------------------------------------------------------------------------------------------------
     int count_i = 0;
     int count_j = 0;
 
@@ -186,7 +182,6 @@ int main(int argc, char* argv[])
         }
     }
 
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Zmiany!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         int size_of_vector_i = jump_time_i.size();
         int size_of_vector_j = jump_time_j.size();
 
@@ -213,7 +208,6 @@ int main(int argc, char* argv[])
             displacement_j[i][3] = changes_y_j[i];
             displacement_j[i][4] = changes_z_j[i];
         }
-    //-----------------------> Calculate distant <---------------------------
 
         double r_ij_i= 0.0;
         double x_i_i = 0.0;
@@ -313,7 +307,6 @@ int main(int argc, char* argv[])
 
 
 
-//--------------------------------------------------------------------------------------
     double maximum_i = -DBL_MAX;
     double minimum_i = DBL_MAX;
     double maximum_j = -DBL_MAX;
@@ -339,7 +332,6 @@ int main(int argc, char* argv[])
 
     cout << "Number of change sign:  " << "Au1 : " << count_i << "  " << "Au2 : " << count_j << "\n";
     cout << "Maximum: " << "Au1 : " << maximum_i << " " << "Au2 : " << maximum_j << "\n";
-//----------------------------------------------------------------------------------------
 
     double swapHolder = -1.0;
     double swapIndex = 1.0;
@@ -384,7 +376,6 @@ int main(int argc, char* argv[])
         }
         end--;
     }
-   //----------------------------------------------------------------------
     int n_bins = 1000;
 
         double bin_width_i = maximum_i/n_bins;
@@ -460,8 +451,7 @@ int main(int argc, char* argv[])
             probability_j[bin][1] /= count_j;
             probability_j[bin][1] /= bin_width_j;
         }
-//-----------------------------------------------------------------------------
-//---------------------Max probability ----------------------------------------
+
 double 	maximum_p_i = -DBL_MAX;
 double maximum_probability_distance_i = 0.0;
 double 	maximum_p_j = -DBL_MAX;
@@ -524,10 +514,6 @@ double maximum_probability_distance_j = 0.0;
        cout << "Time_counter           : " << "Atom_i: " << time_counter_i << " | " << "Atom_j: " << time_counter_j << "\n";
        cout << "Probability distance   : " << "Atom_i: " << maximum_probability_distance_i << " | " << "Atom_j: " << maximum_probability_distance_j << "\n";
        cout << "Average jump distance  : " << "Atom_i: " << ave_jump_distance_i  << " | " << "Atom_j: " <<  ave_jump_distance_j  << "\n";
-//----------------------------------------------------------------------------------------
-
-
-
 
     stringstream timedistance_i;
     timedistance_i << "distance_after_sorting_i.out";
@@ -562,7 +548,6 @@ double maximum_probability_distance_j = 0.0;
     timedistance_j.str("");
     timedistance_j.clear();
 
-//---------------------------------------------------------------------------
     for(int step_id = 0; step_id <number_of_readings; step_id++){delete [] atoms_i[step_id];}
     delete [] atoms_i;
 
